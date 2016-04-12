@@ -4,8 +4,7 @@
  * Licensed under MIT (https://github.com/kwhaler/master/LICENSE)
  */
 
- // Generates a color pallet from a main branding color
- $palette-brand: #48A14E;
+ @import "colors";
 
 // Structure
 .color-palette {
@@ -23,6 +22,7 @@
   display:block;
   position: relative;
   background:#ccc; // default
+  border: solid 1px #ccc;
   width:100px;
   height:100px;
   float:left;
@@ -41,59 +41,22 @@
   	font-weight: 400;
   	letter-spacing: .65px;
   	color: #333;
-
   }
-	
-	// Swatch color theory
-	&.swatch-brand {
-		background: $palette-brand;
-	}
-	&.swatch-brand-compliment {
-		background: #CD5E5B;
-	}
-	&.swatch-brand-lightest {
-		background: lighten($palette-brand, 40%);
-	}
-	&.swatch-brand-lighter {
-		background: lighten($palette-brand, 20%);
-	}
-	&.swatch-brand-light {
-		background: lighten($palette-brand, 10%);
-	}
-	&.swatch-brand-dark {
-		background: darken($palette-brand, 10%);
-	}
-	&.swatch-brand-darker {
-		background: darken($palette-brand, 20%);
-	}
-	&.swatch-brand-darkest {
-		background: darken($palette-brand, 40%);
-	}
-	&.swatch-brand-adjacent-left {
-		background: #97BD55;
-	}
-	&.swatch-brand-adjacent-right {
-		background: #387C79;
-	}
-	&.swatch-triad-left {
-		background: #A84B7A;
-	}
-	&.swatch-triad-right {
-		background: #CD8E5B;
-	}
-	&.swatch-tetrad-left {
-		background: #CD8E5B;
-	}
-	&.swatch-tetrad-center {
-		background: #387C79;
-	}
-	&.swatch-tetrad-right {
-		background: #CD5E5B;
-	}
-	&.swatch-primary-light-blue {
-		background: #64BCBB;
-	}
-	&.swatch-primary-dark-blue {
-		background: #10716F;
-	}
+  &.bg-navy { background-color: $navy; }
+  &.bg-blue { background-color: $blue; }
+	&.bg-aqua { background-color: $aqua; }
+	&.bg-teal { background-color: $teal; }
+	&.bg-olive { background-color: $olive; }
+	&.bg-green { background-color: $green; }
+	&.bg-lime { background-color: $lime; }
+	&.bg-yellow { background-color: $yellow; }
+	&.bg-orange { background-color: $orange; }
+	&.bg-red { background-color: $red; }
+	&.bg-fuchsia { background-color: $fuchsia; }
+	&.bg-purple { background-color: $purple; }
+	&.bg-maroon { background-color: $maroon; }
+	&.bg-white { background-color: $white; }
+	&.bg-silver { background-color: $silver; }
+	&.bg-gray { background-color: $gray; }
+	&.bg-black { background-color: $black; }
 }

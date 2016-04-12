@@ -4,7 +4,7 @@ $('.color-palette li').each(function() {
     var x = $(this).css('backgroundColor');
     hexc(x);
     // $(this).append('<span class="swatch-label">'+color+'</span>').css("color", isDark($(this).css("background-color")) ? 'white' : 'black').css('text-transform','uppercase').addClass('img-thumbnail');
-    $(this).append('<span class="swatch-label">'+color+'</span>').addClass('img-thumbnail');
+    $(this).append('<span class="swatch-label">'+color+'</span>');
 });
 
 function hexc(colorval) {
